@@ -1,0 +1,25 @@
+.forbg {
+    background-image: url(bg31.jpg) !important;
+    background-size: cover;
+    border-radius: 0px;
+    background-position: center;
+    height: 350px;
+}
+
+.text2 {
+    color: white;
+}
+
+.float {
+    height: 100px;
+    text-align: center;
+}
+
+.float h4 {
+    top: 50px;
+}
+
+.imag {
+    max-width: 100% !important;
+    height: auto !important;
+}
