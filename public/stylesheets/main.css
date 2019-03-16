@@ -551,7 +551,7 @@ ul li:hover {
     position: absolute;
     z-index: 3;
     left: 200px;
-    bottom: -530px;
+    top: 17%;
 }
 
 .forposition2 {

@@ -4,11 +4,11 @@ const bcrypt = require('bcryptjs');
 const passport = require('passport');
 
 router.get('/signup',(req,res)=>{
-    res.render('signup');
+    res.render('signup',{user : req.user});
 });
  
 router.get('/login',(req,res)=>{
-    res.render('login');
+    res.render('login',{user : req.user});
 });
 
 router.post('/register',(req,res)=>{

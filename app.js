@@ -49,11 +49,11 @@ app.use((req,res,next)=>{
 })
  
 app.get('/dashboard',(req,res)=>{
-    res.render('dashboard',{name:req.user.name});
+    res.render('dashboard',{name:req.user.name,user:req.user});
 });
 
 app.get('/',(req,res)=>{
-res.render('index') 
+res.render('index',{user:req.user}) 
 });   
 
 app.get('/aboutus',(req,res)=>{
@@ -67,7 +67,7 @@ app.use('/',mailerRoutes)
 app.use('/auth',authRoutes);
 
 app.use('/',courseRoutes);
-
+ 
 
 app.listen(port,()=>{
     console.log(`Application up on port ${port}`)
